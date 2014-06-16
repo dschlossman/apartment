@@ -217,7 +217,7 @@ jQuery( function($){
 	*     Twitter's default renderings.
 	*/
 
-	twitterFetcher.fetch( '441767385733668865', 'tweet', 1, true, false, true, 'default');
+	twitterFetcher.fetch( '478372068308697088', 'tweet', 1, true, false, true, 'default');
 
 
 	/*----------------------/
