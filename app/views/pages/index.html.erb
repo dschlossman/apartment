@@ -269,37 +269,25 @@
 							</div>
 						</div>
 						<div class="col-md-8">
-							<div class="contact-form">
 								<div class="alert"></div>
-								<form id="contact-form" method="post" role="form" novalidate>
+								<%= simple_form_for Contact.new do |f| %>
 									<div class="row">
 										<div class="col-md-6">
-											<div class="form-group">
-												<label class="sr-only" for="name">Name:</label>	
-												<input type="text" id="name" class="form-control" name="name" placeholder="Name*" required>
-											</div>
+											<%= f.input :name, :required => true, :placeholder => "Name", :class => "form-control", label: false %>
 										</div>
 										<div class="col-md-6">
-											<div class="form-group">
-												<label class="sr-only" for="email">Email:</label>
-												<input type="email" id="email" class="form-control" name="email" placeholder="Email*" required>
-											</div>
+											<%= f.input :email, :required => true, :placeholder => "Email", :class => "form-control", label: false %>
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="sr-only" for="subject">Subject:</label>
-										<input type="text" id="subject" class="form-control" name="subject" placeholder="Subject">
+										<%= f.input :subject, :required => true, :placeholder => "Subject", :class => "form-control", label: false %>
 									</div>
 									<div class="form-group">
-										<label class="sr-only" for="message">Message:</label>
-										<textarea id="message" name="message" class="form-control" placeholder="Message*" required></textarea>
+										<%= f.input :message, :as => :text, :placeholder => "Enter a message...", :class => "form-control", label: false %>
 									</div>
-									<button type="submit" class="btn btn-primary btn-lg" id="submit-button">
-										<i class="fa loading-icon"></i> <span>Send Message</span>
-									</button>
-									<input type="hidden" name="msg-submitted" id="msg-submitted" value="true"> 
-								</form>
-							</div>
+									<%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+								<% end %>
+							
 						</div>
 					</div>
 				</div>
