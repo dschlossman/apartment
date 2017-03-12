@@ -1,4 +1,5 @@
 /* ------------------ BASE STYLES ------------------ */
+
 html, body {
   height: 100%;
   width: 100%;
@@ -13,7 +14,7 @@ body {
   line-height: 1.6;
 }
 body.fullscreen-image-background {
-  background-image: url('../../assets/img/sliders/slider4.jpg');
+  background-image: url('../../assets/img/sliders/slider7.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -4417,7 +4418,7 @@ img.mfp-img {
   font-family: "Dosis", sans-serif;
   color: orange;
   font-weight: 300;
-  background-color: none;
+  background-color: white;
 }
 .hero-unit .hero-content .hero-text .hero-heading {
   font-size: 5em;
