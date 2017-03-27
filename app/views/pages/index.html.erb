@@ -38,7 +38,7 @@
 	<link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
 </head>
-<body id="top" class="fullscreen-image-background">
+
 
 	<!-- NAVBAR -->
 	<div class="navbar navbar-fixed-top">
@@ -64,34 +64,70 @@
 	</div>
 	<!-- END NAVBAR -->
 
-	<!-- HERO UNIT -->
-	<div id="hero-unit" class="hero-unit">
-		<div class="hero-content text-center">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7 col-lg-offset-5">
-						<div id="slidecaption" class="slide-caption">
-							<div class="hero-text">
-								<h2 class="hero-heading">CAMPUS VIEW <span class="name"></span></h2>
-								<div data-looper="go" data-interval="3000" class="looper slide down">
-									<div class="looper-inner">
-										<div class="item animated"><p>HISTORIC APARTMENTS</p></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="hero-buttons">
-							<a href="#about" id="btn-about" class="btn btn-info btn-lg"><i class="fa fa-arrow-circle-o-down"></i> Now Renting!</a>
-							<a href="#contact" id="btn-contact" class="btn btn-primary btn-lg"><i class="fa fa-phone-square"></i> GET IN TOUCH</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- END HERO UNIT -->
-	
+	<div id="carousel-example" class="carousel slide" data-ride="carousel">
+	  <div class="carousel-inner">
+	    <div class="item active">
+	    	<%= image_tag '1447/1.jpg', class: 'img img-responsive' %>
+	      <div class="carousel-caption">
+	      		<div class="hero-text">
+	      			<h2 class="hero-heading">CAMPUS VIEW <span class="name"></span></h2>
+	      			<div data-looper="go" data-interval="3000" class="looper slide down">
+	      				<div class="looper-inner">
+	      					<div class="item animated"><p>HISTORIC APARTMENTS</p></div>
+	      				</div>
+	      			</div>
+	      		</div>
+		      	<div class="hero-buttons">
+		      		<a href="#about" id="btn-about" class="btn btn-info btn-md"><i class="fa fa-arrow-circle-o-down"></i> Now Renting!</a>
+		      		<a href="#contact" id="btn-contact" class="btn btn-primary btn-md"><i class="fa fa-phone-square"></i> Get in touch</a>
+		      	</div>
+	      </div>
+	    </div>
+	    <div class="item">
+	      <%= image_tag '1447/3.jpg' %>
+	      <div class="carousel-caption">
+	              		<div class="hero-text">
+	              			<h2 class="hero-heading">CAMPUS VIEW <span class="name"></span></h2>
+	              			<div data-looper="go" data-interval="3000" class="looper slide down">
+	              				<div class="looper-inner">
+	              					<div class="item animated"><p>HISTORIC APARTMENTS</p></div>
+	              				</div>
+	              			</div>
+	              		</div>
+	        	      	<div class="hero-buttons">
+	        	      		<a href="#about" id="btn-about" class="btn btn-info btn-md"><i class="fa fa-arrow-circle-o-down"></i> Now Renting!</a>
+	        	      		<a href="#contact" id="btn-contact" class="btn btn-primary btn-md"><i class="fa fa-phone-square"></i> Get in touch</a>
+	        	      	</div>
+	      </div>
+	    </div>
+	    <div class="item">
+	      <%= image_tag '1447/4.jpg' %>
+	      <div class="carousel-caption">
+	            		<div class="hero-text">
+	            			<h2 class="hero-heading">CAMPUS VIEW <span class="name"></span></h2>
+	            			<div data-looper="go" data-interval="3000" class="looper slide down">
+	            				<div class="looper-inner">
+	            					<div class="item animated"><p>HISTORIC APARTMENTS</p></div>
+	            				</div>
+	            			</div>
+	            		</div>
+	      	      	<div class="hero-buttons">
+	      	      		<a href="#about" id="btn-about" class="btn btn-info btn-md"><i class="fa fa-arrow-circle-o-down"></i> Now Renting!</a>
+	      	      		<a href="#contact" id="btn-contact" class="btn btn-primary btn-md"><i class="fa fa-phone-square"></i> Get in touch</a>
+	      	      	</div>
+	      </div>
+	    </div>
+	  </div>
 
+	  <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left"></span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-example" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right"></span>
+	  </a>
+	</div>
+
+	
 	<!-- MAIN CONTENT -->
 	<div id="main-content" class="main-content">
 		
@@ -175,16 +211,7 @@
 
 		  </div>
 		</div>
-		  <!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
-		</div>
+
 		<!-- END PHOTOS -->
 
 		<!-- AMENITITES -->

@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'contacts/new'
 
   get 'contacts/create'
+  get 'apartment-rentals', to: 'pages#index'
 
   root to: 'pages#index'
   get 'pages/index'
